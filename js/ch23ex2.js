@@ -29,3 +29,4 @@ fetch(
         console.error(err.message);
     });
     
+    console.log("Your name is Mihir Kapur and you visited 2 countires. Keep travelling!");

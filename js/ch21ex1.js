@@ -24,7 +24,17 @@ fetch(
 .then(response=> response.json ())
 .then(paintings=> {
     paintings.forEach(painting => {
-        console.log(painting.name);  
+        paintingElements = Object.values(painting)
+        console.log(paintingElements)
+        
+        const tablerow = document.createElement ("tr");
+
+        paintingElements.forEach(data => {
+            const tabledata = document.createElement ("td");
+            tabledata.innerHTML = data;
+            tablerow.appendChild(tabledata);
+        })
+        document.getElementById("paintings").appendChild(tablerow);
     });
 })
 .catch(err => {
