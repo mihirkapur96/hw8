@@ -8,7 +8,7 @@ userElement.addEventListener("submit", e => {
         .then(user => {
             // Create user info
             const imgElement = document.createElement("img");
-            imgElement.src = github.png;
+            imgElement.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fjoin&psig=AOvVaw01oCLO4VSPdAOWnIph8fBH&ust=1617840909198000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjKipnt6u8CFQAAAAAdAAAAABAD';
             imgElement.style.height = "100px";
             imgElement.style.width = "100px";
             const nameElement = document.createElement("name");
